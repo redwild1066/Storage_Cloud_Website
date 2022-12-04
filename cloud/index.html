@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JenxCloud</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar" id="sideBarLinks">
+            <div class="sidebar-container">
+                <div class="cloud">
+                    <div class="logoIcon">
+                        <i class="fa-solid fa-cloud"></i>
+                        <span>JenxCloud</span>
+                    </div>
+                    <div class="cross">
+                        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul>
+                        <li>
+                            <a href="" class="active"">
+                                <i class="fa-solid fa-house"></i>
+                                <span>My Cloud</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-solid fa-user-group"></i>
+                                <span>Shared Files</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-solid fa-star"></i>
+                                <span>Starred</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-solid fa-trash-can"></i>
+                                <span>Recycle Bin</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-solid fa-question-circle"></i>
+                                <span>Help</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-solid fa-sliders"></i>
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lower-btn">
+                    <img src="./images/lock.svg">
+                    <div class="plan">
+                        <h3>Unlock Your Plan</h3>
+                        <p>Expanded storage acess to <br>more feature on Jenx</p>
+                        <button>Upgrade</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---Sidebar ends -->
+        <main>
+            <div class="header1">
+                <div class="bars">
+                    <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="search" placeholder="Search file..." class="search-file">
+                </div>
+                <div class="grid">
+                    <i class="fa-solid fa-grip"></i>
+                    <h4>Grid</h4>
+                </div>
+                <div class="list">
+                    <i class="fa-solid fa-list"></i>
+                    <h4>List</h4>
+                </div>
+                <i class="fa-solid fa-bell"></i>
+                <img src="./images/2.jpg" >
+            </div>
+            <!----Header1 ends -->
+            <div class="header2">
+                <h2>My Cloud</h2>
+                <div class="add">
+                    <a href="">
+                        <i class="fa-solid fa-plus-circle"></i>
+                        <span>Add Files</span>
+                    </a>
+                </div>
+            </div>
+            <!---- Header2 ends -->
+            <div class="cloud-storage">
+                <div class="active-box">
+                    <img src="./images/google drive.png">
+                    <h3>Google Drive</h3>
+                    <div class="progressbar">
+                        <div class="progressbar-storage1"></div>
+                    </div>
+                    <div class="data">
+                        <h5>13.5Gb</h5>
+                        <h5>15Gb</h5>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/one drive.png">
+                    <h3>Drop Box</h3>
+                    <div class="progressbar">
+                        <div class="progressbar-storage2"></div>
+                    </div>
+                    <div class="data">
+                        <h5>2.2Gb</h5>
+                        <h5>5Gb</h5>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./images/dropbox.png">
+                    <h3>One Drive</h3>
+                    <div class="progressbar">
+                        <div class="progressbar-storage3"></div>
+                    </div>
+                    <div class="data">
+                        <h5>8.4Gb</h5>
+                        <h5>10Gb</h5>
+                    </div>
+                </div>
+            </div>
+            <!---- Cloud storage ends -->
+            <div class="file-list">
+                <div class="added">
+                    <h3>Recent Added</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name <span><i class="fa-solid fa-arrow-up"></i></span></th>
+                                <th>Member</th>
+                                <th>Last Modified</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="fa-solid fa-folder"></i> Monthly report April</td>
+                                <td>Only you</td>
+                                <td>April 13,2022</td>
+                                <td><i class="fa-solid fa-ellipsis"></i></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-folder"></i> Campaign Plan Q4-2022</td>
+                                <td>10 Members</td>
+                                <td>March 10,2022</td>
+                                <td><i class="fa-solid fa-ellipsis"></i></td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-solid fa-folder"></i> Wireframes Project A</td>
+                                <td>5 Members</td>
+                                <td>Feb 3,2022</td>
+                                <td><i class="fa-solid fa-ellipsis"></i></td>
+                            </tr><tr>
+                                <td><i class="fa-solid fa-folder"></i> 12072020-Archive</td>
+                                <td>Only you</td>
+                                <td>Jan 10,2022</td>
+                                <td><i class="fa-solid fa-ellipsis"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+        <!--- Main Ends-->
+        <div class="right">
+            <div class="storage">
+                <h3>Storage</h3>
+                <div class="gauge">
+                    <div class="gauge-body">
+                        <div class="gauge-fill"></div>
+                        <div class="gauge-cover"></div>
+                    </div>
+                </div>
+                <h2>13.1Gb</h2>
+                <p>of 15Gb capacity</p>
+            </div>
+            <div class="occupied-files">
+                <div class="file-group">
+                    <div class="files">
+                        <div class="icon">
+                            <i class="fa-solid fa-image"></i>
+                        </div>
+                        <div>
+                            <h3>Images</h3>
+                            <small>123 Total files</small>
+                        </div>
+                    </div>
+                    <div class="occupied">
+                        <h3>3.0Gb</h3>
+                    </div>
+                </div>
+                <div class="file-group">
+                    <div class="files">
+                        <div class="icon">
+                            <i class="fa-solid fa-file"></i>
+                        </div>
+                        <div>
+                            <h3>Documents</h3>
+                            <small>1.6 Total files</small>
+                        </div>
+                    </div>
+                    <div class="occupied">
+                        <h3>5.3Gb</h3>
+                    </div>
+                </div>
+                <div class="file-group">
+                    <div class="files">
+                        <div class="icon">
+                            <i class="fa-solid fa-clapperboard"></i>
+                        </div>
+                        <div>
+                            <h3>Media files</h3>
+                            <small>88 Total files</small>
+                        </div>
+                    </div>
+                    <div class="occupied">
+                        <h3>3.0Gb</h3>
+                    </div>
+                </div>
+                <div class="file-group">
+                    <div class="files">
+                        <div class="icon">
+                            <i class="fa-solid fa-file"></i>
+                        </div>
+                        <div>
+                            <h3>Other files</h3>
+                            <small>123 Total files</small>
+                        </div>
+                    </div>
+                    <div class="occupied">
+                        <h3>2.6Gb</h3>
+                    </div>
+                </div>
+                <div class="file-group">
+                    <div class="files">
+                        <div class="icon">
+                            <i class="fa-solid fa-file"></i>
+                        </div>
+                        <div>
+                            <h3>Unknown files</h3>
+                            <small>99 Total files</small>
+                        </div>
+                    </div>
+                    <div class="occupied">
+                        <h3>200Mb</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
